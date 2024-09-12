@@ -49,7 +49,7 @@ public:
    * \brief SQLiteOutput constructor
    * \param name database name
    */
-  SQLiteOutput (const std::string &name);
+  SQLiteOutput(const std::string &name, const std::string &semName);
 
   /**
    * Destructor

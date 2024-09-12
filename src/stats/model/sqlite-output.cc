@@ -27,7 +27,7 @@ namespace ns3 {
 
 NS_LOG_COMPONENT_DEFINE ("SQLiteOutput");
 
-SQLiteOutput::SQLiteOutput (const std::string &name)
+SQLiteOutput::SQLiteOutput (const std::string &name,const std::string &sem)
 {
   int rc = sqlite3_open (name.c_str (), &m_db);
   NS_ABORT_MSG_UNLESS (rc == SQLITE_OK, "Failed to open DB");
